@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hasherPlaceholder {
+    margin-left: 5px;
+}
+
+.hasher {
+    width: 600px;
+}
+
+.hasherContainer {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.hasherDnd {
+    height: 150px;
+    margin: 0 5%;
+    z-index: 100;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.hasherDropplace {
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+}
+
+.hasherDnd::before {
+    content: 'Put the file here';
+    font-size: 1.2em;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+}
+
+.hashAlgorithmChoice {
+    display: flex;
+}
+
+.hashAlgorithm {
+    margin: 10px;
+    border-radius: 10px;
+}
